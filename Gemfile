@@ -29,10 +29,18 @@ gem 'jbuilder', '~> 1.2'
 
 #Api gems
 gem 'active_model_serializers'
+gem "rspec-rails", "~> 2.14"
+gem "factory_girl_rails"
+gem 'ffaker'
+gem 'test-unit'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :test do
+
 end
 
 # Use ActiveModel has_secure_password

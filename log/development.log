@@ -18,3 +18,9 @@ Started GET "/" for 127.0.0.1 at 2017-02-03 12:33:23 -0500
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/elegran/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
 Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 13:51:30 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/elegran/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 25ms (Views: 17.2ms | ActiveRecord: 0.0ms)
