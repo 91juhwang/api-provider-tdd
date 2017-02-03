@@ -29,10 +29,11 @@ gem 'jbuilder', '~> 1.2'
 
 #Api gems
 gem 'active_model_serializers'
-gem "rspec-rails", "~> 2.14"
+gem "rspec-rails"
 gem "factory_girl_rails"
 gem 'ffaker'
 gem 'test-unit'
+gem 'devise'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
