@@ -12,10 +12,11 @@ User is able to place many orders, upload multiple products which can have many 
 
 ## Requirements
 
-  - `Ruby 2.3.0 or higher `
+  - `Ruby 2.3.0 or higher`
   - `Rails 4.0.1`
   - `PostgreSQL 9.6.1`
-  - `RSpec`
+  - `RSpec-rails 3.5.2`
+  - `active_model_serializers`
 
 ## Installation
 
