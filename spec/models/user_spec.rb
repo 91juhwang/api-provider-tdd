@@ -11,7 +11,7 @@ describe User do
     end
 
     context 'when email is not present' do
-      let(:user) { FactoryGirl.build(:user, email: ' ') }
+      let(:user) { FactoryGirl.build(:user, email: '  ') }
       
       it 'should not create a user' do
         expect(user).to_not be_valid
