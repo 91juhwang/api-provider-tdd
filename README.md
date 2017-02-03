@@ -6,6 +6,10 @@ Built with TDD and optimized for better performance and response time.
 
   - heroku
 
+## Structure
+
+User is able to place many orders, upload multiple products which can have many images or comments from another users on the app.
+
 ## Requirements
 
   - `Ruby 2.3.0 or higher `
