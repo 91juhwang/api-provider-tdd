@@ -1,8 +1,8 @@
 # RESTfulAPI-Server-Rails
 
-An online shop REST-API for the third-party integration and consumption.
+A stateless, REST-API for the third-party integration and consumption, such as Online Shops like Shopify. 
 
-Built with TDD and optimized for better performance and response time.
+Built with TDD and optimization implemented for better performances and the response time.
 
   - heroku
 
