@@ -9,12 +9,12 @@ describe ApiConstraints do
     it "returns true when the version matches the 'Accept' header" do
       request = double(host: 'api.restfulapi-server-rails.dev/',
                        headers: {"Accept" => "application/vnd.restfulapi-server-rails.v1"})
-      api_constraints_v1.matches?(request).should be true
+      expect(api_constraints_v1.matches?(request)).to be true
     end
 
     it "returns the default version when 'default' option is specified" do
       request = double(host: 'api.restfulapi-server-rails.dev/')
-      api_constraints_v2.matches?(request).should be true
+      expect(api_constraints_v2.matches?(request)).to be true
     end
   end
 end
