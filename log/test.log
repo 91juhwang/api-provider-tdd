@@ -2432,3 +2432,252 @@ Processing by Api::V1::UsersController#show as application/vnd.restfulapi-server
 [active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.37ms)
 Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
   [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'leida_schmidt@erdman.info' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'gfBwBBBUVCqQse--2q2L' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'uniquetoken123' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'martina.cassin@fadel.ca' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'rDqzBoiupjRBNr4s_97U' LIMIT 1
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["auth_token", "rDqzBoiupjRBNr4s_97U"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "martina.cassin@fadel.ca"], ["encrypted_password", "$2a$04$TuvJF38RkCA.YBLj0Cf7wu1ahDGFsHel5X86Xd.0ZdKNiQxO1ZDEO"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::UsersController#show as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"id"=>"327", "user"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "327"]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.56ms)
+Completed 200 OK in 18ms (Views: 7.6ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'katheryn@schultz.us' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."auth_token" = '1VqXZwZaeE7aPVSCUQCj' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["auth_token", "1VqXZwZaeE7aPVSCUQCj"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "katheryn@schultz.us"], ["encrypted_password", "$2a$04$JnsQBZsCXIuWKTHjqGbB0ew2P3uFdsdrgpSRomyXoj7QPA/AZa8X."], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::UsersController#show as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"id"=>"328", "user"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "328"]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.59ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by Api::V1::UsersController#create as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"user"=>{"email"=>"jayson.reynolds@kuhic.biz", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jayson.reynolds@kuhic.biz' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'wAgSRP36atW6_wdSQujf' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["auth_token", "wAgSRP36atW6_wdSQujf"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "jayson.reynolds@kuhic.biz"], ["encrypted_password", "$2a$04$sxbm3CiRcGLxUGDSgegZx.B4mKj5aeRaXcH0rnaDsvgTd1gwpgoqe"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.21ms)
+Completed 201 Created in 6ms (Views: 1.1ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by Api::V1::UsersController#create as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"user"=>{"email"=>"jennine@shieldsdonnelly.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'jennine@shieldsdonnelly.co.uk' LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'jbmYA-5xBLYT5rpiArU6' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["auth_token", "jbmYA-5xBLYT5rpiArU6"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "jennine@shieldsdonnelly.co.uk"], ["encrypted_password", "$2a$04$an77oPt4TsS8f48ehxN/Kef6HNfEnxnFf.uR1AMlm52lqtLtOfcea"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.22ms)
+Completed 201 Created in 6ms (Views: 1.1ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'rickie@altenwerthhermann.ca' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'z3xJtsBtkJzbnJugRc19' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["auth_token", "z3xJtsBtkJzbnJugRc19"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "rickie@altenwerthhermann.ca"], ["encrypted_password", "$2a$04$R4uiyfCtuXtf7kQAeRRen.0MBAtANcAzC7F.WqtQtDZqv04wZUc2O"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::UsersController#update as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"331"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "331"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."email" = 'bademail.com' AND "users"."id" != 331) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 422 Unprocessable Entity in 6ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'gracie@jacobi.com' LIMIT 1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'tfRTX49w9wfxe3Dy7JEA' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["auth_token", "tfRTX49w9wfxe3Dy7JEA"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "gracie@jacobi.com"], ["encrypted_password", "$2a$04$qbyq5h2SvO0YdiqzzIXHu.2GFBkRj5T8oW7aTNYKVhKnEaizkTZBG"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#update as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"332"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "332"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."email" = 'bademail.com' AND "users"."id" != 332) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 422 Unprocessable Entity in 11ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'alaine@fadel.us' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'YuygE4gmtoAwJvA-DCtw' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["auth_token", "YuygE4gmtoAwJvA-DCtw"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "alaine@fadel.us"], ["encrypted_password", "$2a$04$.9gXkkMgA1NwV9h7shSfAOnXe25b4XcRna1YxYW0npL3d2aJxPpEu"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::UsersController#update as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"333"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "333"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."email" = 'bademail.com' AND "users"."id" != 333) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'rosann_berge@ernser.name' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'jstxfHsCT1ufVERzzHwf' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["auth_token", "jstxfHsCT1ufVERzzHwf"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "rosann_berge@ernser.name"], ["encrypted_password", "$2a$04$qxMq7Toef9B814gcudpCzeKz8QpGghWsAMzUE3iMEf7YOJiTS6zAq"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#update as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"334"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "334"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."email" = 'newmail@example.com' AND "users"."id" != 334) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "email" = $1, "updated_at" = $2 WHERE "users"."id" = 334[0m  [["email", "newmail@example.com"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.31ms)
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'chery_bahringer@hahn.name' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'GiFja_zSRiDfoTWT-e8C' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["auth_token", "GiFja_zSRiDfoTWT-e8C"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "chery_bahringer@hahn.name"], ["encrypted_password", "$2a$04$GaZ9wVuSCHlIuaTk39VCae7qY2dyQME1.ybMITr./KNL3hauGs2cm"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#update as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"335"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "335"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."email" = 'newmail@example.com' AND "users"."id" != 335) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "email" = $1, "updated_at" = $2 WHERE "users"."id" = 335[0m  [["email", "newmail@example.com"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.25ms)
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by Api::V1::UsersController#create as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by Api::V1::UsersController#create as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by Api::V1::UsersController#create as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'dominique@nitzsche.name' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."auth_token" = '3nXR-rec3xjiEecvYb1p' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["auth_token", "3nXR-rec3xjiEecvYb1p"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "dominique@nitzsche.name"], ["encrypted_password", "$2a$04$azbUOWjI25sVOVve9g6rzOaqMRZsbw2FS2V6Tz/NRMjFv0FUx3MCa"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#destroy as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"id"=>"336", "user"=>{}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "336"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 336]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 2ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'leopoldo@vonrueden.biz' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'LD9GMeRyaCns2pTKxrAE' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["auth_token", "LD9GMeRyaCns2pTKxrAE"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "leopoldo@vonrueden.biz"], ["encrypted_password", "$2a$04$/NfaDY.9BIUxRGOuWqIeNeooAGxEoBYnPXn1dSmqM0gcR0DzETM9y"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::SessionsController#create as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"session"=>{"email"=>"leopoldo@vonrueden.biz", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'leopoldo@vonrueden.biz' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'lavona@gislasonnienow.info' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'ND5xw1pM83bNGMFEU67s' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["auth_token", "ND5xw1pM83bNGMFEU67s"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "lavona@gislasonnienow.info"], ["encrypted_password", "$2a$04$/9wHzW0rGXvb.g3EUPkAs.SDIwKuNVDec34euSvg/zFNJgEM/1DOO"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::SessionsController#create as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"session"=>{"email"=>"lavona@gislasonnienow.info", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'lavona@gislasonnienow.info' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'brianne.kunze@bogan.co.uk' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'MDZYr5Vv2V2tHdk-B4Ww' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["auth_token", "MDZYr5Vv2V2tHdk-B4Ww"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "brianne.kunze@bogan.co.uk"], ["encrypted_password", "$2a$04$JPLXVVRFW7JhmmTT2xB5vOlYQsDbiWGY807uSomG3hb0rn5mIViSm"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::SessionsController#create as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"session"=>{"email"=>"brianne.kunze@bogan.co.uk", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'brianne.kunze@bogan.co.uk' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 339[0m  [["last_sign_in_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["current_sign_in_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["last_sign_in_ip", #<IPAddr: IPv4:0.0.0.0/255.255.255.255>], ["current_sign_in_ip", #<IPAddr: IPv4:0.0.0.0/255.255.255.255>], ["sign_in_count", 1], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'YzanwRDPNyUvF2BFC66E' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "auth_token" = $1, "updated_at" = $2 WHERE "users"."id" = 339[0m  [["auth_token", "YzanwRDPNyUvF2BFC66E"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.28ms)
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 339]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'yasuko.emard@gleichner.biz' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'GTGbJLB_iYJzU2Vnchp2' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("auth_token", "created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["auth_token", "GTGbJLB_iYJzU2Vnchp2"], ["created_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["email", "yasuko.emard@gleichner.biz"], ["encrypted_password", "$2a$04$PRMK9O8PtIhyNOuHycTOu.tMmo7aZJwAlWVdV.ehZ70vmq3MIhZl."], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::SessionsController#create as application/vnd.restfulapi-server-rails.v1
+  Parameters: {"session"=>{"email"=>"yasuko.emard@gleichner.biz", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'yasuko.emard@gleichner.biz' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 340[0m  [["last_sign_in_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["current_sign_in_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00], ["last_sign_in_ip", #<IPAddr: IPv4:0.0.0.0/255.255.255.255>], ["current_sign_in_ip", #<IPAddr: IPv4:0.0.0.0/255.255.255.255>], ["sign_in_count", 1], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."auth_token" = 'Da-MwxRxL7BxNTyFysAj' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "auth_token" = $1, "updated_at" = $2 WHERE "users"."id" = 340[0m  [["auth_token", "Da-MwxRxL7BxNTyFysAj"], ["updated_at", Sat, 04 Feb 2017 19:40:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.25ms)
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m

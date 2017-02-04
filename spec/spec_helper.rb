@@ -20,6 +20,7 @@ RSpec.configure do |config|
   # Request_Helpers for Controller tests with default API header section
   config.include Request::JsonHelpers, :type => :controller
   config.include Request::HeadersHelpers, :type => :controller
+
   config.before(:each, type: :controller) do
     # including below method to every controller test
     include_default_accept_headers
