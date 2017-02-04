@@ -9,6 +9,7 @@ Built with TDD and optimization implemented for better performances and the resp
 ## Structure
 
 User is able to place many orders, upload multiple products which can have many images or comments from another users on the app.
+Using `pow` to create a subdomain for local development tests
 
 ## Requirements
 
