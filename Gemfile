@@ -41,7 +41,7 @@ group :doc do
 end
 
 group :test do
-
+  gem 'shoulda-matchers'
 end
 
 # Use ActiveModel has_secure_password

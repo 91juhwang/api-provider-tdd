@@ -24,6 +24,8 @@ RSpec.configure do |config|
     # including below method to every controller test
     include_default_accept_headers
   end
+  config.include(Shoulda::Matchers::ActiveModel, type: :model)
+  config.include(Shoulda::Matchers::ActiveRecord, type: :model)
 
   config.include Devise::TestHelpers, :type => :controller
   # ## Mock Framework
